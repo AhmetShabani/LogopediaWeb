@@ -107,3 +107,45 @@ nav img {
 nav .fa{
     display: none;
 }
+
+
+/* explore */
+.explore{
+    width: 80%;
+    padding-top: 90px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 20px;
+    padding: 10px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.card{
+    flex-basis: 30%;
+    background: rgb(227, 241, 233);
+    margin-bottom: 3%;
+    padding: 20px 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.7s;
+}
+h3{
+    margin: 10px 0;
+    font-weight: 600px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
