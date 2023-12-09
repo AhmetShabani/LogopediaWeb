@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos ABC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/fb.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/fb.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="sub__header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+            <div class="nav__links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+
+    </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.4497444945555!2d21.157549575046257!3d42.65182391662045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549fe0f9bc937f%3A0xc9e76421640b7cd0!2sKabineti%20logopedik%20-%20LOGOS%20ABC!5e0!3m2!1sen!2sjp!4v1701106231626!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact__us">
+        <div class="cards">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>
+                        <h5> Speech Therapy Cabinet Logos ABC </h5>
+                        <p> Imzot Nikëprela, Prishtina 10000</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <h5> +383 45 415 257 </h5>
+                        <p> Monday to Friday 12PM to 8PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span>
+                        <h5> betimegosalci@gmail.com </h5>
+                        <p> Email us your queries</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form id="form" action="/">
+                    <input name="email" id="email" type="email" placeholder="Email">
+                    <input name="fname" id="fname" type="text" placeholder="First Name">
+                    <input name="lname" id="lname" type="text" placeholder="Last Name">
+                    <input name="pwd" id="pwd" type="password" placeholder="Password">
+                    <input name="pwd2" id="pwd2" type="password" placeholder="Confirm password">
+                    <button class="hero__btn btn2" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Our company is a specialized center offering logopedic treatment services, providing personalized and innovative solutions for our clients. With our dedicated team of logopedists, we aim to help individuals develop and enhance their communication skills. The use of modern methods and our focus on each client make the treatment experience not only effective but also inspiring. We are here to assist those seeking to improve their quality of life through the enhancement of their communication abilities.</p>
+         <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+         </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function openMenu(){
+            navLinks.style.right = "0";
+        }
+
+        /*
+        const form = document.getElementById('form');
+        const email = document.getElementById('email');
+        const fname = document.getElementById('fname');
+        const lname = document.getElementById('lname');
+        const pwd = document.getElementById('pwd');
+        const pwd2 = document.getElementById('pwd2');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            validateInputs();
+        });
+
+        const setError = (element, message) => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error')
+            
+            errorDisplay.innerText = message;
+            inputControl.classList.add('error');
+            inputControl.classList.remiove('success');
+        }
+
+        const setSuccess = element => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('.error');
+            
+            errorDisplay.innerText = '';
+            inputControl.classList.remiove('success');
+            inputControl.classList.add('error');
+        }
+
+        const isValidEmail = email => {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+
+        const validateInputs = () => {
+            const emailValue = email.value.trim();
+            const fnameValue = fname.value.trim();
+            const lname = lname.value.trim();
+            const pwdValue = pwd.value.trim();
+            const pwd2Value = pwd2.value.trim();
+
+            if(emailValue === ''){
+                setError(email, 'Email is required');
+            } else if (!isValidEmail(emailValue)) {
+                setError(email, 'Provide a valid email address');
+            } else {
+                setSuccess(email);
+            }
+
+            if(fnameValue === ''){
+                setError(fname, 'First name is required')
+            } else{
+                setSuccess(fname)
+            }
+
+            if(lnameValue === ''){
+                setError(lname, 'Last name is required')
+            } else{
+                setSuccess(lname)
+            }
+
+            if(pwdValue === ''){
+                setError(pwd, 'Password is required');
+            } else if (pwdValue.length < 8 ) {
+                setError(pwd, 'Password must be at least 8 character.')
+            } else {
+                setSuccess(pwd);
+            }
+
+            if(pwd2Value === ''){
+                setError(pwd2, 'Please confirm your password');
+            } else if (pwd2Value !== pwdValue) {
+            setError(pwd2, "Passwords doesn't match");
+            } else {
+             setSuccess(pwd2);
+            }
+
+        }; */
+
+
+    </script>
+</body>
+
+</html>
