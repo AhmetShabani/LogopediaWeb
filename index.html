@@ -30,7 +30,117 @@
                 <p>Therapeutic services for suttering, autism, articulation disorders, speech difficulty, <br>
                      cochlear implant, nasal speech, speech development delay, literacy Disorders</p>
                 <a href="/contact.html" class="hero__btn">Visit Us</a>
-                <button class="hero__btn2">Learn More</button>
+                <button class="hero__btn2" onclick="scrollDown()">Learn More</button>
 
+                <script>
+                    function scrollDown() {
+                    
+                        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+                    }
+                </script>
             </div>
     </section>
+
+
+    <!-- EXPLORE -->
+    <section class="explore">
+        <h1> Some Of The Conditions We Treat</h1>
+        <p> Learn more about these conditions, what they're characterized with, how it affects an individual and how to approach it.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Stuttering</h3>
+                <p> Stuttering is a speech disorder characterized by interruptions in the normal flow of
+                    speech, which can lead to communication difficulties. These disruptions can take different forms, such as repetitions
+                    of sounds, syllables, or words, prolongations of sounds, and blocks where the person is unable to
+                    produce sounds. Causes of Stuttering: Genetics, Childhood Development, Neurophysiology,
+                    enviormental factors etc.
+                    difficulties.</p>
+            </div>
+
+            <div class="card">
+                <h3>Receptive Language Disorder</h3>
+                <p> Receptive language disorder is a condition that affects a person's ability to understand spoken or written
+                    words.Individuals with receptive language disorder may have difficulty comprehending spoken words,
+                    sentences, or written language. The causes of this condition can vary, some being from a combination of genetic,
+                    neurological, or environmental factors. It can be associated with other conditions such as developmental disorders,
+                    learning disabilities, or neurological disorders.</p>
+            </div>
+
+            <div class="card">
+                <h3>Selective mutism</h3>
+                <p> Selective mutism is an anxiety disorder. It is characterized by inability to speak in certain social
+                    situations where there's an expectation for verbal communication, despite being able to speak in other situations.
+                    It often manifests in childhood and can significantly affect academic, social, and emotional
+                    development. The cause is not clear in every situation, but it happens to be associated with anxiety.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="reviews">
+        <h1>What Our Clients Say</h1>
+        <p>We try our best to make you feel comfortable and safe while working together. </p>
+
+        <div class="cards">
+            <div class="reviews__card">
+                <img src="images/user.png" alt="User Icon">
+                <div>
+                    <p>"Eksperienca e djalit tim ishte e mrekullueshme. Ekipi i logopedëve është i përkushtuar dhe trajtimi ishte personalizuar. Përdorimi i teknikave inovative dhe ndihma për të kuptuar më mirë komunikimin ka bërë një ndryshim të dukshëm. Çmimet dhe afatet ishin të qarta. Rekomandoj me bindje!"</p>
+                    <h3>Agron Hoxha</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+
+            <div class="reviews__card">
+                <img src="images/user.png" alt="User Icon">
+                <div>
+                    <p>Eksperienca me logopedinë për vajzën time ka qenë e mrekullueshme. Ekipi i logopedëve është shumë i përkushtuar dhe ka ofruar një terapi të personalizuar dhe të përshtatshme për nevojat e vajzës sime. Përparimet në aftësitë e komunikimit janë bërë të dukshme shumë shpejt.</p>
+                    <h3>Veronika Jahja</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="cta">
+        <h1>Visit Us On Our Cabinet <h2> Open From 12:00 To 20:00 </h2></h1>
+        <a href="" class="hero__btn">Contact Us</a>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Our company is a specialized center offering logopedic treatment services, providing personalized and innovative solutions for our clients. With our dedicated team of logopedists, we aim to help individuals develop and enhance their communication skills. The use of modern methods and our focus on each client make the treatment experience not only effective but also inspiring. We are here to assist those seeking to improve their quality of life through the enhancement of their communication abilities.</p>
+         <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+         </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function openMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+</body>
+</html>
+
+
+</body>
