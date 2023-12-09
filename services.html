@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos ABC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/fb.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/fb.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="sub__header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+            <div class="nav__links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
+            </nav>
+            <h1>Our Services</h1>
+            
+    </section>
+
+
+    <section class="explore">
+        <h1> Services we offer </h1>
+        <p>Therapeutic services for suttering, autism, articulation disorders, speech difficulty, <br>
+            cochlear implant, nasal speech, speech development delay, literacy Disorders</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Stuttering</h3>
+                <p> Stuttering is a speech disorder characterized by interruptions in the normal flow of
+                    speech, which can lead to communication difficulties. These disruptions can take different forms, such as repetitions
+                    of sounds, syllables, or words, prolongations of sounds, and blocks where the person is unable to
+                    produce sounds. Causes of Stuttering: Genetics, Childhood Development, Neurophysiology,
+                    enviormental factors etc.
+                    difficulties.</p>
+            </div>
+
+            <div class="card">
+                <h3>Receptive Language Disorder</h3>
+                <p> Receptive language disorder is a condition that affects a person's ability to understand spoken or written
+                    words.Individuals with receptive language disorder may have difficulty comprehending spoken words,
+                    sentences, or written language. The causes of this condition can vary, some being from a combination of genetic,
+                    neurological, or environmental factors. It can be associated with other conditions such as developmental disorders,
+                    learning disabilities, or neurological disorders.</p>
+            </div>
+
+            <div class="card">
+                <h3>Selective mutism</h3>
+                <p> Selective mutism is an anxiety disorder. It is characterized by inability to speak in certain social
+                    situations where there's an expectation for verbal communication, despite being able to speak in other situations.
+                    It often manifests in childhood and can significantly affect academic, social, and emotional
+                    development. The cause is not clear in every situation, but it happens to be associated with anxiety.</p>
+            </div>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Childhood Apraxia Of Speech (CAS)</h3>
+                <p> Childhood Apraxia of Speech (CAS) is a speech disorder that affects an individual's ability to plan and
+                    coordinate the movements necessary for accurate speech production. Unlike other speech disorders,
+                    CAS is not associated with muscle weakness or paralysis. Although, the exact cause of CAS is not always
+                    known or specific, and it can vary in severity.</p>
+            </div>
+
+            <div class="card">
+                <h3>Autism-Related Speech Disorders</h3>
+                <p> Autism spectrum disorder (ASD) is a developmental disorder characterized by challenges in social
+                    interaction, communication, and repetitive behaviors. Speech and language issues are common
+                    among individuals who are diagnosed with autism. Many individuals with autism struggle socially. Social skills
+                    training can help them develop and practice appropriate social behaviour.</p>
+            </div>
+
+            <div class="card">
+                <h3>Attention Deficit/Hyperactivity Disorder (ADHD)</h3>
+                <p> ADHD is a neurodevelopmental disorder characterized by persistent patterns of inattention,
+                    hyperactivity, and impulsivity that interfere with daily functioning. Symptoms of ADHD
+                    often manifest in early childhood but can persist into adolescence and adulthood as well. Some of These
+                    symptoms include inattention, hyperactivity and impulsivity. </p>
+            </div>
+
+        </div>
+
+    </section>
+
+ 
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Our company is a specialized center offering logopedic treatment services, providing personalized and innovative solutions for our clients. With our dedicated team of logopedists, we aim to help individuals develop and enhance their communication skills. The use of modern methods and our focus on each client make the treatment experience not only effective but also inspiring. We are here to assist those seeking to improve their quality of life through the enhancement of their communication abilities</p>
+         <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+         </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function openMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+</body>
+</html>
