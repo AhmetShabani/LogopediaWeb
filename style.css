@@ -387,3 +387,7 @@ h3{
     transition: 0.8s;
     color:white;
 }
+.error{
+    color:red;
+    margin-top: -20px;
+}
