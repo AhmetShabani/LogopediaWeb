@@ -65,11 +65,12 @@
                     <input name="lname" id="lname" type="text" placeholder="Last Name">
                     <input name="pwd" id="pwd" type="password" placeholder="Password">
                     <input name="pwd2" id="pwd2" type="password" placeholder="Confirm password">
-                    <button class="hero__btn3" type="submit">Sign Up</button>
+                    <button class="hero__btn3" onclick="validateForm()" >Sign Up</button>
                 </form>
             </div>
         </div>
     </section>
+
 
     <section class="footer">
         <h4>About Us</h4>
@@ -91,7 +92,60 @@
             navLinks.style.right = "0";
         }
 
-        
+ /*
+        [a-z]- shkronja te vogla
+        [A-Z]- shkronja te medhaja
+        {5, 10}- min dhe max i karaktereve
+        ^[a-z]- karakteri i pare shkronje e vogel
+
+        /^[A-Z][a-z]{3, 10}$/ = Name: Filan
+        /[a-zA-Z0-9._-] + @ + [a-z] + \. + [a-z]{3}$/ = Email: filanfisteku@gmail.com
+        */
+
+        let  fnameRegex = /^[A-Z][a-z]{2,8}$/;
+        let  lnameRegex = /^[A-Z][a-z]{2,8}$/;
+        let emailRegex = /[a-zA-Z._-]+@+[a-z]+\.+[a-z]{3}$/;
+        let pwdRegex = /[a-zA-Z0-9._-]{8,15}$/;
+
+        function validateForm(){
+            let emailInput = document.getElementById('email');
+            let emailError = document.getElementById('emailError');
+            let fnameInput = document.getElementById('fname');
+            let fnameError = document.getElementById('fnameError');
+            let lnameInput = document.getElementById('lname');
+            let lnameError = document.getElementById('lnameError');
+            let pwdInput = document.getElementById('pwd');
+            let pwdError = document.getElementById('pwdError');
+            
+            emailError.innerText = '';
+            lnameError.innerText = '';
+            fnameError.innerText = '';
+            pwdError.innerText = '';
+
+
+            if(!emailRegex.test(emailInput.value)){
+                emailError.innerText = 'Invalid Email';
+                return;
+            } 
+
+            if(!lnameRegex.test(lnameInput.value)){
+                lnameError.innerText = 'Invalid Last Name';
+                return;
+            } 
+
+            if(!fnameRegex.test(fnameInput.value)){
+                fnameError.innerText = 'Invalid First Name';
+                return;
+            }
+
+            if(!pwdRegex.test(pwdInput.value)){
+                pwdError.innerText = 'Invalid Password';
+                return;
+            }
+
+            alert('form submitted successfully');
+            
+        }        
 
 
     </script>
